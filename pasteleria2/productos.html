@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="icon" href="logo original.png" type="image/png">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pastelería Jackie's Sweet</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo original.png" alt="Logo" />
+        </div>
+        <div class="location">
+            <img src="mapa.png" alt="Ubicación" style="max-width: 20px; margin-right: 5px;"/>
+            <span>Ingresa tu código postal</span>
+        </div>
+        <input type="text" placeholder="Buscar" class="search-box" />
+        <div class="categories">
+            <span>Pasteles</span>
+            <span>Repostería</span>
+            <span>Accesorios</span>
+            <span>Novedades</span>
+        </div>
+        <div class="icons">
+            <img src="usuario.png" alt="Usuario" />
+            <img src="carrito-de-compras.png" alt="Carrito" />
+        </div>
+    </nav>
+
+    <!-- Tabla de productos con DataTable -->
+    <div class="container" style="margin-top: 100px;"> <!-- Ajuste para navbar fijo -->
+        <h1>Lista de Productos</h1>
+        <table id="myTable" class="display">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Biscuit de Fresas</td>
+                    <td>Pasteles</td>
+                    <td>Mediano</td>
+                    <td>$450.00</td>
+                </tr>
+                <tr>
+                    <td>Berry Special Tres Leches</td>
+                    <td>Pasteles</td>
+                    <td>Chico</td>
+                    <td>$520.00</td>
+                </tr>
+                <tr>
+                    <td>Chocolatisimo</td>
+                    <td>Pasteles</td>
+                    <td>Grande</td>
+                    <td>$540.00</td>
+                </tr>
+                <tr>
+                    <td>Cookie Delight</td>
+                    <td>Galletas</td>
+                    <td>Grande</td>
+                    <td>$150.00</td>
+                </tr>
+                <tr>
+                    <td>Crunchy Oats</td>
+                    <td>Galletas</td>
+                    <td>Mediano</td>
+                    <td>$180.00</td>
+                </tr>
+                <tr>
+                    <td>Choco Mint Bliss</td>
+                    <td>Pasteles</td>
+                    <td>Grande</td>
+                    <td>$600.00</td>
+                </tr>
+                <tr>
+                    <td>Vanilla Dream</td>
+                    <td>Pasteles</td>
+                    <td>Chico</td>
+                    <td>$400.00</td>
+                </tr>
+                <tr>
+                    <td>Red Velvet Supreme</td>
+                    <td>Pasteles</td>
+                    <td>Grande</td>
+                    <td>$620.00</td>
+                </tr>
+                <tr>
+                    <td>Macadamia Joy</td>
+                    <td>Galletas</td>
+                    <td>Chico</td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>Almond Crunch</td>
+                    <td>Galletas</td>
+                    <td>Mediano</td>
+                    <td>$220.00</td>
+                </tr>
+                <tr>
+                    <td>Cheesecake Delight</td>
+                    <td>Pasteles</td>
+                    <td>Grande</td>
+                    <td>$650.00</td>
+                </tr>
+                <tr>
+                    <td>Brownie Bliss</td>
+                    <td>Repostería</td>
+                    <td>Mediano</td>
+                    <td>$300.00</td>
+                </tr>
+                <tr>
+                    <td>Caramel Temptation</td>
+                    <td>Repostería</td>
+                    <td>Grande</td>
+                    <td>$340.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Jackie's Sweet. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+            <p>Contacto: info@jackies.com | Teléfono: 8123614736</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.min.js"></script>
+    <script>
+        let table = new DataTable('#myTable');
+    </script>
+</body>
+</html>

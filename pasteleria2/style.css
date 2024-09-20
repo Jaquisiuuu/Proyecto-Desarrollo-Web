@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f8b5cb; /* Color rosa melón */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+}
+
+.logo img {
+    max-height: 40px; /* Ajusta el tamaño del logo */
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin-right:20px;
+    margin-left: 20px;
+}
+
+.location span {
+    margin-left: 5px; /* Espaciado entre el icono y el texto */
+}
+
+.search-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.categories {
+    display: flex;
+    margin-left: auto;
+    margin-right: 90px; /* Empuja las categorías a la derecha */
+    cursor: pointer;
+}
+
+.categories span {
+    margin-left: 30px;
+    color: black;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px; /* Espacio entre categorías e iconos */
+}
+
+.icons img {
+    max-height: 35px; /* Ajusta el tamaño de los iconos */
+    margin-left: 15px; /* Espaciado entre iconos */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 80px auto; /* Espacio para el navbar fijo */
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between; /* Espacia los cuadros uniformemente */
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%; /* Ajusta el ancho para que quepan tres en la línea */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto en el cuadro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% al pasar el mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Cambia la sombra para más énfasis */
+}
+
+.item img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del cuadro */
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+    transition: transform 0.2s ease-in-out; /* Transición suave */
+}
+.item:hover img {
+    transform: scale(1.1); /* Aumenta la imagen al 110% */
+}
+
+.description h3 {
+    margin: 10px 0 5px;
+}
+
+.description p {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #f58f8f; /* Color rosa de los botones */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b67290; /* Color del botón al pasar el mouse */
+}
+
+.hero-image {
+    height: 100vh;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    margin-top: 60px;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%; /* La imagen ocupará el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-image img{
+    width: 100%;
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+.main-image {
+    width: 100%;
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    position: relative;
+    overflow: hidden; /* Evita que cualquier contenido excedente se muestre */
+}
+
+.info-section {
+    display: flex; /* Usa flexbox para alinear horizontalmente */
+    justify-content: center; /* Espacio uniforme entre los elementos */
+    margin: 20px 0; /* Margen superior e inferior */
+    padding: 0 20px; /* Espacio interno en los lados */
+}
+
+.info-item {
+    display: flex; /* Alinea la imagen y el texto horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    flex: 0 0 auto; /* Permite que cada elemento ocupe el mismo ancho */
+    margin: 0 70px; /* Espacio entre los elementos */
+}
+
+.info-image {
+    max-width: 50px; /* Tamaño máximo de las imágenes */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.footer {
+    background-color: #f38888; /* Color rosa melón */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espacio interno */
+    margin-top: 20px; /* Espacio superior para separar del contenido */
+}
+
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.social-media {
+    margin: 10px 0; /* Margen para separar los enlaces */
+}
+
+.social-media a {
+    color: rgb(0, 0, 0); /* Color de los enlaces */
+    margin: 0 15px; /* Espacio entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.favorites-title {
+    text-align: center; /* Centra el texto */
+    font-size: 2em; /* Tamaño de fuente grande */
+    margin: 50px 0; /* Espacio superior e inferior */
+    color: #333; /* Cambia el color si es necesario */
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    .gallery .item {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery .item {
+        flex: 1 1 100%;
+    }
+    
+    .info-section {
+        flex-direction: column;
+    }
+
+    .info-item {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-box {
+        max-width: 100%;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .categories span {
+        margin: 10px 5px;
+    }
+}
+
